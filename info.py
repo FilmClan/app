@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25065882'))
 API_HASH = environ.get('API_HASH', '7711af532d45686e38c6b360161e2483')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6784076127:AAFUqpm1oN5tjcDyCQmviNSInAb_BP4Qhb8")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6930309519:AAHyWHg9rSuRro3RdyeQgxYhyz4vjBLohSc")
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -53,13 +53,13 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
 # url shortner
-SHORT_URL = environ.get('SHORT_URL', 'moneykamalo.com')
-SHORT_API = environ.get('SHORT_API', 'f29ee5e108f0faf0d28a7c06f7cdaafe641e8bca')
+SHORT_URL = environ.get('SHORT_URL', 'upshrink.com')
+SHORT_API = environ.get('SHORT_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001920843740'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'SRBBots')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'SRB_Bots')
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
