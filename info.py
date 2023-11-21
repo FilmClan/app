@@ -53,8 +53,8 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
 # url shortner
-SHORT_URL = environ.get('SHORT_URL', 'upshrink.com')
-SHORT_API = environ.get('SHORT_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
+SHORTNER_SITE = environ.get('SHORTNER_SITE', 'upshrink.com')
+SHORTNER_API = environ.get('SHORTNER_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
@@ -64,8 +64,8 @@ P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
 SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
@@ -77,7 +77,9 @@ PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
 LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰ Tɪᴍᴇ : {}\n\n🖥️ Rᴇᴏᴩ: {}\n🉐 Vᴇʀsɪᴏɴ: {}\n🧾 Lɪᴄᴇɴꜱᴇ: {}\n©️ Cᴏᴩʏʀɪɢʜᴛ: {}"
 
 
-
+# url shortner
+SHORTNER_SITE = environ.get('SHORTNER_SITE', 'upshrink.com')
+SHORTNER_API = environ.get('SHORTNER_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
 
 
 
