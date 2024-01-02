@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25065882'))
 API_HASH = environ.get('API_HASH', '7711af532d45686e38c6b360161e2483')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6784076127:AAEn48aevqQwCVqgcfSN_cXcSvUb5C37bFU")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6784076127:AAGoPAnKbYURu4OqGfuOVf1V33vjSYmn9wc")
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -27,8 +27,8 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002012320801').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
-auth_grp = environ.get('AUTH_GROUP')
+auth_channel = environ.get('-1002098883316')
+auth_grp = environ.get('-1001963503004')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
@@ -74,8 +74,8 @@ LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰
 
 
 # url shortner
-SHORTNER_SITE = environ.get('SHORTNER_SITE', 'upshrink.com')
-SHORTNER_API = environ.get('SHORTNER_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
+SHORT_URL = environ.get('SHORT_URL', 'upshrink.com')
+SHORT_API = environ.get('SHORT_API', 'f433a226ff57c20421e9efb41e09c18ea3b5135d')
 
 
 
