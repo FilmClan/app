@@ -18,7 +18,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6784076127:AAGoPAnKbYURu4OqGfuOVf1V33vjSYm
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
-PICS = (environ.get('PICS', 'https://graph.org/file/8a5a43b818cf2876bb7b0.jpg https://graph.org/file/1b59daabc3fa56b9ede28.jpg https://graph.org/file/b71adb5b51f6f3f7d51f2.jpg https://graph.org/file/3ee628f905760fec75be7.jpg https://graph.org/file/110aaea1992445c7963f9.jpg https://graph.org/file/24ba0883333ec96977c75.jpg https://graph.org/file/24bbb6a9097040de414f1.jpg https://graph.org/file/0976eeb860321c6f4d3c6.jpg https://graph.org/file/cdab66154546e11acf5c6.jpg https://graph.org/file/a3f567a4e6886896fc775.jpg https://graph.org/file/439fd1981edd412224041.jpg https://graph.org/file/8a5a43b818cf2876bb7b0.jpg https://graph.org/file/1b59daabc3fa56b9ede28.jpg https://graph.org/file/b71adb5b51f6f3f7d51f2.jpg https://graph.org/file/24bbb6a9097040de414f1.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://graph.org/file/0b8fe1c307144d4ed41a5.jpg')).split() #SAMPLE PIC
 UPTIME = time.time()
 
 # Admins, Channels & Users
@@ -60,9 +60,9 @@ P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
 SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '📂 <b>File Name</b>: <code>{file_name}</code> \n\n❤️‍🔥 <b>Join</b> [FilmClan](https://t.me/FilmClan)')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '📂 <b>File Name</b>: <code>{file_name}</code> \n\n❤️‍🔥 <b>Join</b> [𒆜ꜰɪʟᴍᴄʟᴀɴ࿐](https://t.me/FilmClan)')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [[FilmClan]](t.me/FilmClan)')
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [[𒆜ꜰɪʟᴍᴄʟᴀɴ࿐]](t.me/FilmClan)')
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
