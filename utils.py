@@ -304,7 +304,7 @@ def get_time(seconds):
     return result
     
 async def get_shortlink(link):
-    url = f'{SHORT_URL}/api'
+    url = f'http://urlshortx.co}/api'
     params = {'api': SHORT_API, 'url': link}
     try:
         async with aiohttp.ClientSession() as session:
