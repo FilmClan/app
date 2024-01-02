@@ -52,8 +52,8 @@ async def start(client, message):
         except ChatAdminRequired:
             logger.error("MAKE SURE BOT IS ADMIN IN FORCESUB CHANNEL")
             return
-        btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url="https://t.me/+OCIj2yeIOjZiYjc9")]]
-        if message.command[1] != "subscribe":
+        btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url="invite_link.invite_link")]]
+        if message.command[1] != "https://t.me/+OCIj2yeIOjZiYjc9":
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
