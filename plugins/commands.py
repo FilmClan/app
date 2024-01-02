@@ -55,7 +55,7 @@ async def start(client, message):
         btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url="invite_link.invite_link")]]
         if message.command[1] != "https://t.me/+OCIj2yeIOjZiYjc9":
             try:
-                kk, file_id = message.command[1].split("_", 1)
+                kk, file_id = message.command[1].split("https://t.me/+OCIj2yeIOjZiYjc9", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
                 btn.append([InlineKeyboardButton("⟳ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
