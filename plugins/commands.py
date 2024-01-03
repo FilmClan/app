@@ -53,9 +53,9 @@ async def start(client, message):
             logger.error("MAKE SURE BOT IS ADMIN IN FORCESUB CHANNEL")
             return
         btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url="invite_link.invite_link")]]
-        if message.command[1] != "subscribe":
+        if message.command[1] != "+OCIj2yeIOjZiYjc9":
             try:
-                kk, file_id = message.command[1].split("_", '-1002098883316')
+                kk, file_id = message.command[1].split("+OCIj2yeIOjZiYjc9", '+OCIj2yeIOjZiYjc9')
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
                 btn.append([InlineKeyboardButton("⟳ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
